@@ -24,10 +24,12 @@ public class Generador {
         for(int i=0;i<numeros;i++)
         {
             numeroGenerado=genera();
-            if(!datos.contains(numeroGenerado))
+            
+            while(datos.contains(numeroGenerado))
             {
-                datos.add(genera());
+                numeroGenerado=genera();                
             }
+            datos.add(numeroGenerado);
         }        
         return datos;
     }
