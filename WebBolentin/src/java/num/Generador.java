@@ -15,7 +15,7 @@ public class Generador {
 
     private int genera()
     {
-        return new int;
+        return (int) (Math.random() * (maximo-minimo) + minimo);
     }
     
     public int getMinimo() {
