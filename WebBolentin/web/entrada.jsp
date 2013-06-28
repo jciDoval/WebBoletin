@@ -12,8 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="">
-            
+        <form action="aleatorio.jsp">
+            Minimo: <input type="text" name="minimo"/>
+            Maximo: <input type="text" name="maximo"/>
+            Numeros: <input type="text" name="numeros"/>
+            <input type="submit" />
         </form>
     </body>
 </html>
