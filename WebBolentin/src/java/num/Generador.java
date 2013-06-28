@@ -4,6 +4,8 @@
  */
 package num;
 
+import java.util.Vector;
+
 /**
  *
  * @author alumno
@@ -12,6 +14,27 @@ public class Generador {
     private int minimo;
     private int maximo;
     private int numeros;
+    
+    private Vector datos;
+
+    public Vector getDatos() {
+        datos = new Vector();
+        int numeroGenerado;
+        
+        for(int i=0;i<numeros;i++)
+        {
+            numeroGenerado=genera();
+            if(!datos.contains(numeroGenerado))
+            {
+                datos.add(genera());
+            }
+        }        
+        return datos;
+    }
+
+    public void setDatos(Vector datos) {
+        this.datos = datos;
+    }
 
     private int genera()
     {
