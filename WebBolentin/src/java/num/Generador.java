@@ -40,7 +40,7 @@ public class Generador {
 
     private int genera()
     {
-        return (int) (Math.random() * (maximo-minimo) + minimo);
+        return (int) (Math.random() * (maximo-minimo+1) + minimo);
     }
     
     public int getMinimo() {
