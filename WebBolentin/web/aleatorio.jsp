@@ -15,6 +15,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        Los numeros aleatorios son los siguientes: 
+        Los numeros aleatorios son los siguientes: <jsp:getProperty name="mibean" property="datos" ></jsp:getProperty>
     </body>
 </html>
