@@ -13,6 +13,11 @@ public class Generador {
     private int maximo;
     private int numeros;
 
+    private int genera()
+    {
+        return new int;
+    }
+    
     public int getMinimo() {
         return minimo;
     }
