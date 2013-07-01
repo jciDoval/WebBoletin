@@ -22,7 +22,7 @@
             
             <input type="submit" name="submit" value="Comprar" />
             <input type="submit" name="eliminar" value="Eliminar" />
-            <input type ="submit" name="eliminar session" value="Eliminar sesion" />
+            <input type ="submit" name="submit" value="Eliminar session" />
         </form>
         
         <%
@@ -68,13 +68,13 @@
                 <%
             }
             
-            if(submit.equals("Eliminar sesion"))
+            if(submit.equals("Eliminar session"))
             {
                 session.invalidate();
             }
             
             
-            %>
+             %>
                         
             
       
